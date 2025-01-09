@@ -1,0 +1,5 @@
+execute:
+
+export FILE=file-name
+
+file-dirname/ docker-compose run --rm rust

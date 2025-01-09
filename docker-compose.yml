@@ -1,0 +1,9 @@
+services:
+  rust:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app 
+    working_dir: /app/dataStructure
+    entrypoint: sh -c "rustc $FILE.rs && ./$FILE"
